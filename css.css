@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.inic-tit{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    background-color: #fff;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+.container{
+    height: 700px;
+    background-color: black;
+    background-image: url('./pictures/cock.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: calc(100% - 100px);
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.flex1{
+    /* height: 400px; */
+    padding: 100px;
+    width: 50%;
+}
+
+#desc{
+    padding: 20px 0;
+    text-align: center;
+    color: rgb(192, 192, 192);
+    font-size: 17px;
+    line-height: 25px;
+}
+
+#call-to{
+    text-align: center;
+}
+
+#call-to{
+    background-color: #fff;
+}
