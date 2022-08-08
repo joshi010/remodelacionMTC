@@ -14,12 +14,19 @@ h1{
 }
 
 nav{
+    position: sticky;
+    top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     height: 50px;
     align-items: center;
     background-color: #fff;
+}
+
+.show{
+    top: 0;
+    transition: all 0.7s;
 }
 
 ul{
@@ -32,7 +39,7 @@ ul{
 .container{
     height: 90%;
     background-color: black;
-    background-image: url('./pictures/cock.png');
+    background-image: url('../pictures/cock.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: calc(100% - 100px);
@@ -45,6 +52,11 @@ ul{
     /* height: 400px; */
     padding: 100px;
     width: 50%;
+}
+
+.up-to-bottom{
+    top: 0 !important;
+    transition: all 1.5s;
 }
 
 #desc{
@@ -140,15 +152,24 @@ ul{
 
 
 
-@media only screen and (max-width: 414px){
+@media only screen and (max-width: 425px){
+    nav{
+        position: fixed;
+        top: -50px;
+    }
+
     .container{
+        height: 100%;
         justify-content: center;
         align-items: center;
-        background-position: -189px 168%;
+        background-position: -140px 120%;
+        background-size: 288px;
     }
     .flex1{
         width: calc(100% - 20px);
         padding: 0px;
+        position: relative;
+        top: 100%;
     }
 
     #desc{
