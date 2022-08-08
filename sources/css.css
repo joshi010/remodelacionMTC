@@ -1,11 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Roboto:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #000;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Mouse Memoirs', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 10px;
 }
 
 h1{
     text-align: center;
+    font-size: 50px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 30px;
 }
 
 .inic-tit{
@@ -22,6 +43,13 @@ nav{
     height: 50px;
     align-items: center;
     background-color: #fff;
+}
+
+.inic-tit{
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 
 .show{
@@ -42,10 +70,11 @@ ul{
     background-image: url('../pictures/cock.png');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: calc(100% - 100px);
+    background-position: calc(100% - 100px) 100%;
     color: #fff;
     display: flex;
     align-items: center;
+    background-size: 36%;
 }
 
 .flex1{
@@ -63,8 +92,9 @@ ul{
     padding: 30px 0;
     text-align: center;
     color: rgb(192, 192, 192);
-    font-size: 17px;
+    font-size: 20px;
     line-height: 25px;
+    
 }
 
 #call-to a{
@@ -88,6 +118,8 @@ ul{
     height: 50px;
     border-radius: 5px;
     transition: all 0.3s;
+    color: #000;
+    cursor: pointer;
 }
 
 #call-to:hover{
@@ -102,7 +134,7 @@ ul{
 
 .sec{
     background-color: #3b444b;
-    padding: 20px 30px;
+    padding: 20px 30px 45px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 
@@ -112,11 +144,12 @@ ul{
 .sec h2{
     grid-column: 1 / span 4;
     padding: 20px 0;
+    color: #ddd;
 }
 
 .cards{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, 350px);
     gap: 5%;
 }
 
@@ -125,9 +158,15 @@ ul{
     flex-direction: column;
     height: 290px;
     width: 350px;
-    background-color: #ffffff81;
+    background-color: #9ea3a6;
     border-radius: 5px;
-    cursor: pointer
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.card:hover{
+    width: 360px;
+    transition: all 0.3s;
 }
 
 .img{
@@ -156,6 +195,7 @@ ul{
     nav{
         position: fixed;
         top: -50px;
+        z-index: 1;
     }
 
     .container{
@@ -169,7 +209,7 @@ ul{
         width: calc(100% - 20px);
         padding: 0px;
         position: relative;
-        top: 100%;
+        top: 50%;
     }
 
     #desc{
@@ -183,14 +223,21 @@ ul{
     .cards{
         overflow: scroll;
         width: 100%;
+        grid-template-columns: repeat(4, 1fr);
     }
 
+    .card{
+        margin:0 10px;
+    }
     .sec{
-        height: 50%;
+        height: 500px;
         padding: 0;
     }
 
     .sec h2{
-        margin-left: 30px;
+        padding: 0;
+        margin-top: 70px;
+        margin-left: 10px;
+        font-size: 40px;
     }
 }
