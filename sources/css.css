@@ -242,8 +242,48 @@ ul{
 #see-more{
     margin-top: 20px;
     display: none;
+    align-items: center;
 }
 
+.show-more{
+    margin-top: 20px;
+    display: flex;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.more-nig:hover{
+    text-decoration: none;
+}
+
+.more-nig{
+    text-decoration: underline;
+}
+
+.arr{
+    position: relative;
+    margin: 0 20px;
+    font-size: 50px;
+    top: -12px;
+    transition: all 0.3s;
+}
+
+.display-block{
+    display: block !important;
+}
+
+.rotate{
+    transform: rotate(90deg);
+    transition: all 0.3s;
+}
+
+#name-history{
+    display: none;
+}
+
+#more{
+    display: none;
+}
 
 @media only screen and (max-width: 1180px){
     .txt{
@@ -253,6 +293,8 @@ ul{
     #see-more{
         display:flex;
     }
+
+
 }
 
 
@@ -271,6 +313,11 @@ ul{
         background-position: -140px 120%;
         background-size: 288px;
     }
+
+    .call-to{
+        margin-top: 20px;
+    }
+
     .flex1{
         width: calc(100% - 20px);
         padding: 0px;
@@ -327,4 +374,6 @@ ul{
         width: 100%;
         margin-left: 0;
     }
+
+
 }
