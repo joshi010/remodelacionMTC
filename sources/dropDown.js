@@ -18,3 +18,20 @@ more.onclick = () => {
 }
 
 
+// function pageScroll() {
+//     window.scrollBy(0, window.innerHeight);
+//     scrolldelay = setTimeout(pageScroll, 1);
+
+
+
+// }
+
+
+
+document.getElementById('call-to-1').onclick = () => {
+    window.scroll({
+        top: document.querySelector('.sec').offsetHeight + 80,
+        behavior: 'smooth'
+    })
+}
+ 
