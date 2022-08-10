@@ -18,20 +18,25 @@ more.onclick = () => {
 }
 
 
-// function pageScroll() {
-//     window.scrollBy(0, window.innerHeight);
-//     scrolldelay = setTimeout(pageScroll, 1);
-
-
-
-// }
-
-
-
 document.getElementById('call-to-1').onclick = () => {
     window.scroll({
-        top: document.querySelector('.sec').offsetHeight + 80,
+        top: document.querySelector('.sec').offsetHeight,
         behavior: 'smooth'
     })
 }
  
+document.getElementById('metacuki-nft').onclick = () => {
+    window.open('./projects/nfts.html')
+}
+
+document.getElementById('monkey').onclick = () => {
+    window.open('./projects/translate.html');
+}
+
+document.getElementById('mbuks').onclick = () => {
+    window.open('./projects/resumenes/index.html');
+}
+
+document.getElementById('quest').onclick = () => {
+    window.open('./projects/pruebaDeAlgo/index-question.html');
+}
